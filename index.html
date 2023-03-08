@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Montserrat">
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Fraunces">
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+      background-color: hsl(30, 38%, 92%);
+      width: 1440px;
+      height: 1440px;
+      font-size: 14px;
+      float: right;
+      overflow-y: hidden;
+    }
+    .block1{
+      background-color:hsl(0, 0%, 100%);
+      position:absolute;
+      top: 133px;
+      width: 250px;
+      left: 800px;
+      height:403px;
+      border-radius: 0 20px 20px 0;
+      
+    }
+    .image1{
+      position: absolute;
+      top: 133px;
+      width: 270px;
+      left: 530px;
+      border-radius: 20px 0 0 20px;
+    }
+    .para1{
+      font-family:Montserrat;
+      letter-spacing: 4px;
+      font-weight:medium;
+      margin-left: 30px;
+      color: hsl(228, 12%, 48%);
+    }
+    .para2
+    {
+      
+      font-family: Fraunces;
+      font-size: 30px;
+      font-weight: 700;
+      margin-left: 30px;
+    }
+    .para3
+    {
+      line-height: 1.5;
+      margin-left: 30px;
+      color: hsl(228, 12%, 48%);
+    }
+    .button
+    {
+      background-color:hsl(158, 36%, 37%);
+      border: none;
+      color: white;
+      padding: 10px 45px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer; 
+      margin-left: 30px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <table align="center">
+    <tr>
+      <td><img class="image1" src="./images/image-product-desktop.jpg" alt="img">
+        <td class="block1">
+           <p class="para1">PERFUME</p>
+          <p class="para2">Gabrielle<br>Essence Eau<br>De Parfum</p>
+          <p class="para3">A floral, solar and voluptuous <br> interpretation composed by <br> Olivier Polge, 
+            Perfumer-Creator <br> for the House of CHANEL.</p>
+        
+          <P class="para2" style="display: inline;color: hsl(158, 36%, 37%);">$149.99</P>
+          <p style="display: inline;margin-left: 15px;"><del>$169.99</del></p>
+          <button class="button"><img src="./images/icon-cart.svg" alt=""> &nbsp; Add to Cart</button>
+    </tr>
+
+  </table>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Siva Chandra Prasad</a>.
+  </div>
+</body>
+</html>
